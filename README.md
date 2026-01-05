@@ -86,7 +86,7 @@ public/
 
 ```
 
-###📄 License
+### License
 This project is for educational and demonstration purposes only.
 
 ### ✨ Author
