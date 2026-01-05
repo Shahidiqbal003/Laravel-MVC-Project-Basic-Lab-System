@@ -3,7 +3,7 @@
 A clean and simple **Laravel MVC-based Lab Diagnostic Website** that allows administrators to manage lab services, test details, blog posts, and incoming contact queries.  
 Built as a lightweight CMS for small laboratories to maintain their online presence with ease.
 
-Live Demo: **https://your-live-site-link.com**  
+Live Demo: **https://lab.shahidqurashi.com/login**  
 Admin Login: **admin@admin.com**  
 Password: **12345678**
 
