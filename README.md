@@ -56,15 +56,6 @@ Password: **12345678**
 
 ---
 
-## 🚀 Installation Guide
-
-Follow these steps to run the project locally:
-
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/your-username/lab-website.git
-cd lab-website
-
 ### Dashboard
 <img width="1664" height="874" alt="image" src="https://github.com/user-attachments/assets/1647154e-1736-4390-9a51-d2ef085fa88a" />
 Manage Services
