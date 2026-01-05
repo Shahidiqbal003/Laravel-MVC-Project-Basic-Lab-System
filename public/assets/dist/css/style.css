@@ -1,0 +1,239 @@
+ :root {
+     --primary-red: #E02F34;
+     /* --primary-red: #DC2626; */
+     --primary-blue: #3E4097;
+     /* --primary-blue: #1E40AF; */
+     --primary-green: #059669;
+     --accent-orange: #EA580C;
+     --neutral-50: #F8FAFC;
+     --neutral-100: #F1F5F9;
+     --neutral-200: #E2E8F0;
+     --neutral-300: #CBD5E1;
+     --neutral-600: #475569;
+     --neutral-800: #1E293B;
+     --neutral-900: #0F172A;
+ }
+
+ body {
+     font-family: 'Inter', sans-serif;
+     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+     min-height: 100vh;
+ }
+
+ .font-poppins {
+     font-family: 'Poppins', sans-serif;
+ }
+
+ /* Custom Gradient Backgrounds */
+ .gradient-primary {
+     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-red) 100%);
+ }
+
+ .gradient-secondary {
+     background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-blue) 100%);
+ }
+
+ .gradient-accent {
+     background: linear-gradient(135deg, var(--accent-orange) 0%, var(--primary-red) 100%);
+ }
+
+ /* Hero Section */
+ .hero-bg {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(62, 64, 151, 0.9) 0%,
+            rgba(234, 49, 55, 0.8) 100%
+        ),
+        url('../../img/hero-lab.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ /* Glass Morphism */
+ .glass {
+     background: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(10px);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+ }
+
+ /* Custom Shadows */
+ .shadow-custom {
+     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+ }
+
+ .shadow-soft {
+     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+ }
+
+ /* Custom Animations */
+ @keyframes float {
+
+     0%,
+     100% {
+         transform: translateY(0px);
+     }
+
+     50% {
+         transform: translateY(-10px);
+     }
+ }
+
+ .animate-float {
+     animation: float 6s ease-in-out infinite;
+ }
+
+ @keyframes pulse-glow {
+
+     0%,
+     100% {
+         box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+     }
+
+     50% {
+         box-shadow: 0 0 30px rgba(220, 38, 38, 0.5);
+     }
+ }
+
+ .pulse-glow {
+     animation: pulse-glow 2s ease-in-out infinite;
+ }
+
+ /* Service Cards */
+ .service-card {
+     transition: all 0.3s ease;
+     border: 1px solid rgba(226, 232, 240, 0.5);
+ }
+
+ .service-card:hover {
+     transform: translateY(-8px) scale(1.02);
+     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+ }
+
+ /* Navigation Styles */
+ .nav-link {
+     position: relative;
+     transition: all 0.3s ease;
+ }
+
+ .nav-link:hover {
+     color: var(--primary-red);
+ }
+
+ .nav-link::after {
+     content: '';
+     position: absolute;
+     bottom: -2px;
+     left: 0;
+     width: 0;
+     height: 2px;
+     background: var(--primary-red);
+     transition: width 0.3s ease;
+ }
+
+ .nav-link:hover::after,
+ .nav-link.active::after {
+     width: 100%;
+ }
+
+ /* Mobile Menu */
+ .mobile-menu {
+     transform: translateX(100%);
+     transition: transform 0.3s ease;
+ }
+
+ .mobile-menu.active {
+     transform: translateX(0);
+ }
+
+ /* Custom Buttons */
+ .btn-primary-custom {
+     background: linear-gradient(135deg, var(--primary-red) 0%, #EA3137 100%);
+     transition: all 0.3s ease;
+ }
+
+ .btn-primary-custom:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 10px 25px -5px rgba(220, 38, 38, 0.4);
+ }
+
+ .btn-secondary-custom {
+     background: linear-gradient(135deg, var(--primary-blue) 0%, #1E40AF 100%);
+     transition: all 0.3s ease;
+ }
+
+ .btn-secondary-custom:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 10px 25px -5px rgba(30, 64, 175, 0.4);
+ }
+
+ /* Stats Animation */
+ .stat-number {
+     background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-blue) 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+ }
+
+ /* Responsive Typography */
+ @media (max-width: 768px) {
+     .hero-title {
+         font-size: 2.5rem;
+         line-height: 1.2;
+     }
+
+     .hero-subtitle {
+         font-size: 1.1rem;
+     }
+ }
+
+ /* WhatsApp Button */
+ .whatsapp-float {
+     position: fixed;
+     bottom: 30px;
+     right: 30px;
+     z-index: 1000;
+     transition: all 0.3s ease;
+ }
+
+ .whatsapp-float:hover {
+     transform: scale(1.1);
+ }
+
+ /* Phone Number in Navbar */
+ .phone-number {
+     background: #1E40AF;
+     padding: 8px 16px;
+     border-radius: 20px;
+     color: white;
+     font-weight: 600;
+     transition: all 0.3s ease;
+ }
+
+ .phone-number:hover {
+     transform: scale(1.05);
+     box-shadow: 0 5px 15px rgba(5, 150, 105, 0.4);
+ }
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    color: #E02F34; /* red */
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(135deg, #E02F34, #2563eb);
+    border-radius: 10px;
+}
