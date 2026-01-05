@@ -1,4 +1,4 @@
-<img width="1664" height="874" alt="image" src="https://github.com/user-attachments/assets/7216db09-1512-4094-a52e-87e70fa6590d" /><img width="1664" height="874" alt="image" src="https://github.com/user-attachments/assets/bf09191a-7469-4d2e-915f-e25533aa65b7" /><img width="1664" height="874" alt="image" src="https://github.com/user-attachments/assets/a99c670d-dbe4-460d-af3a-a5aa2c1a995f" /># 🧪 Ghazi Lab Diagnostic – Laravel MVC Website
+# 🧪 **Basic Lab Diagnostic – Laravel MVC Website**
 
 A clean and simple **Laravel MVC-based Lab Diagnostic Website** that allows administrators to manage lab services, test details, blog posts, and incoming contact queries.  
 Built as a lightweight CMS for small laboratories to maintain their online presence with ease.
@@ -66,6 +66,7 @@ Contact Messages
 <img width="1677" height="878" alt="image" src="https://github.com/user-attachments/assets/4cdff379-4c9b-41d0-b162-b2a91030fcb9" />
 
 ### 📁 Project Structure (Important Folders)
+```bash
 app/
  ├── Http/
  │    ├── Controllers/
@@ -83,6 +84,7 @@ public/
  ├── assets/
  ├── uploads/
 
+```bash
 ###📄 License
 This project is for educational and demonstration purposes only.
 
